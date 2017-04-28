@@ -62,15 +62,15 @@ box p {
 /* ================================================== */
 
 .top-talent-section {
-  background-image: -webkit-linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/assets/css/img/developer.jpg');
-  background-image: -moz-linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/assets/css/img/developer.jpg');
-  background-image: -o-linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/assets/css/img/developer.jpg');
-  background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/assets/css/img/developer.jpg');
+  background-image: -webkit-linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/assets/css/img/developer.jpg');
+  background-image: -moz-linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/assets/css/img/developer.jpg');
+  background-image: -o-linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/assets/css/img/developer.jpg');
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/assets/css/img/developer.jpg');
   -webkit-background-size: cover;
   background-size: cover;
-  background-position: center;
-  height: 100vh;  
+  background-position: center; 
   background-attachment: fixed;
+  height: 700px;
 }
 
 .top-talent-section h2,
@@ -80,4 +80,26 @@ box p {
 
 .top-talent-section h2 {
   margin-top: 60px;
+}
+blockquote {
+  color: #fff;
+  position: relative;
+  padding-top: 30px;
+}
+
+blockquote:before {
+  content: "\201C";
+  color: #fff;
+  font-size: 500%;
+  position: absolute;
+  top: -30px;
+  left: -10px;
+}
+
+/* ================================================== */
+ /* CONTACT US SECTION*/
+/* ================================================== */
+
+.contact-us-section p {
+  text-align: center;
 }
