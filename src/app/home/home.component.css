@@ -1,21 +1,32 @@
 .hero-text-box {
-background-image: -webkit-linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/assets/css/img/hero-image.jpg');
-background-image: -moz-linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/assets/css/img/hero-image.jpg');
-background-image: -o-linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/assets/css/img/hero-image.jpg');
-background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/assets/css/img/hero-image.jpg');
--webkit-background-size: cover;
-background-size: cover;
-background-position: center;
-height: 100vh;
+  background-image: -webkit-linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/assets/css/img/hero-image.jpg');
+  background-image: -moz-linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/assets/css/img/hero-image.jpg');
+  background-image: -o-linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/assets/css/img/hero-image.jpg');
+  background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/assets/css/img/hero-image.jpg');
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
 }
 
 .hero-text-box h1 {
   position: absolute;
   width: 1140px;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: #fff;
   font-weight: 300;
   margin: 0;
+}
+
+.hero-btn-pos {
+  position: absolute;
+  top: 40%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 130px;
+  height: 20px;
 }

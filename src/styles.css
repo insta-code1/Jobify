@@ -1,4 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+ 
+/*color: #0288d1 */
 
 * {
   margin: 0;
@@ -18,4 +20,73 @@ html {
 .row {
   max-width: 1140px;
   margin: 0 auto;
+}
+
+
+
+
+/* ================================================== */
+ /* Navbar */
+/* ================================================== */
+  nav {
+    height: 0;
+  }
+
+  .main-nav {
+    float: right;
+    list-style: none;
+  }
+
+  .main-nav li {
+    margin-top: 55px;;
+    display: inline-block;
+    color: #ffffff;
+    margin-right: 15px;
+  }
+
+  .main-nav li a:link,
+  .main-nav li a:visited {
+    text-decoration: none;
+    color: #ffffff;
+    border: 0;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+  }
+
+  .main-nav li:hover,
+  .main-nav li:active {
+    border-bottom: 2px solid #0288d1 ;
+  }
+
+/* ================================================== */
+ /* Logo */
+/* ================================================== */
+
+.logo {
+  display: inline-block;
+  margin-top: 55px;
+  color: #fff;
+  font-size: 120%;
+  cursor: pointer;
+}
+
+/* ================================================== */
+ /* REUSABLE COMPONENTS*/
+/* ================================================== */
+
+.btn-signup-ghost {
+  padding: 3px 3px 1px 3px;
+  border: 2px solid #0288d1;
+  border-radius: 2px;
+  margin: 0px;
+  font-weight: 400;
+  transition: background-color 0.2s, font-weight 0.2s;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.btn-signup-ghost:hover,
+.btn-signup-ghost:active {
+  background-color: #0288d1;
 }
