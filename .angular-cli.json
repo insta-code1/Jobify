@@ -19,10 +19,12 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
+        "assets/vendors/css/grid.css",
         "../node_modules/normalize.css/normalize.css",
         "styles.css",
         "../node_modules/lato-font/css/lato-font.min.css",
-        "../node_modules/ionicons/dist/css/ionicons.min.css"
+        "../node_modules/ionicons/dist/css/ionicons.min.css",
+        "assets/css/queries.css"
       ],
       "scripts": [],
       "environmentSource": "environments/environment.ts",
