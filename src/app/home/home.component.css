@@ -118,3 +118,69 @@ textarea {
   border-radius: 3px;
   border: 1px solid #ccc;
 }
+
+
+
+
+/* ================================================== */
+ /* MEDIA QUERIES*/
+/* ================================================== */
+
+@media only screen and (max-width: 1200px) {
+
+  .hero-text-box{
+    background-image: -webkit-linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/assets/css/img/hero-image.jpg');
+    width: 100%;
+    padding: 0 2%;
+  }
+
+  .hero-text-box h1 { 
+    width: 100%;
+    margin-left: 20px;  
+  }
+}
+
+
+ /*Small tablet to big tablet 768px to 1023px */
+@media only screen and (max-width: 1023px) {
+
+
+  /* FIND THE DREAM JOB section */
+  
+  .long-copy {
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  .span-1-of-4 {
+    width: 100%;
+  }
+  /*icons margin*/
+  .row.col.span-1-of-4.box { margin: 20px 20px; }
+
+  /*Talent section*/
+  .top-talent-section { 
+    height: 550px;
+    margin-top: 0;  
+  }
+
+  .span-1-of-2 {
+    width: 80%;
+  }
+
+  blockquote:before { top: 0px; }
+  .contact-form { width: 100%; }
+} 
+
+
+
+/* Small phones to small tablets 481px ot 767px */
+/*@media only screen and (max-width: 767px) {
+ 
+}*/
+
+
+  /* Small phones from 0 to 480px */
+  /*@media only screen and (max-width: 480px) {
+  }*/
+/*}*/ 
