@@ -24,6 +24,13 @@
 
 
   /* Small phones from 0 to 480px */
-  /*@media only screen and (max-width: 480px) {
-  }*/
-/*}*/ 
+@media only screen and (max-width: 480px) {
+  .main-nav { display: none; } 
+  .logo span { font-size: 170%; }
+  .logo { 
+    display: block;
+    margin: 10px auto;
+    width: 100px; 
+  } 
+
+} 

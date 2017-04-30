@@ -175,12 +175,31 @@ textarea {
 
 
 /* Small phones to small tablets 481px ot 767px */
-/*@media only screen and (max-width: 767px) {
- 
-}*/
+@media only screen and (max-width: 767px) {
+
+/* Section Features */
+ .row.col.span-1-of-4.box {     
+    width: 90%;
+    margin: 0 5%;   
+  }
+
+  /*contact-form*/
+  .col.span-1-of-3 { margin: 20px 0; } 
+  .contact-form a.btn-signup-ghost.center-btn { margin-top: 145px; }
+}
 
 
-  /* Small phones from 0 to 480px */
-  /*@media only screen and (max-width: 480px) {
-  }*/
-/*}*/ 
+/* Small phones from 0 to 480px */
+@media only screen and (max-width: 480px) {
+  /*Finde Dream job section */
+  .row.col.span-1-of-4.box {     
+    width: 90%;
+    margin: 0 5%;   
+  }
+
+  /*Talent section*/
+  .top-talent-section { height: 100vh; }
+  .top-talent-section h2 { margin-top: 30px; }
+  .span-1-of-2 { width: 100%; }
+  blockquote { margin-left: 10px; }
+  }
