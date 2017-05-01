@@ -13,10 +13,10 @@
 }
 
 /* ================================================== */
- /*REGISTER FORM */
+ /* LOGIN FORM */
 /* ================================================== */
 
-.register-section {
+.login-section {
   height: 0;
 }
 .call-to-action {
@@ -33,7 +33,7 @@
   bottom: 200px;
   }
 
-.register-form {
+.login-form {
   width: 35%;
   margin: 0 auto;
   background-color: #f4f4f4; 
@@ -47,9 +47,18 @@ input { margin: 6px 0; }
   bottom: 45px;
 }
 
-.switch-to-login {
+.forgot-password {
+  font-size: 80%;
+  float: right;
+ }
+
+ .forgot-password a {
+  text-decoration: none;
+ }
+
+.switch-to-sign-up {
   font-size: 90%;
   text-align: center;
 }
 
-.switch-to-login a { text-decoration: none; }
+.switch-to-sign-up a { text-decoration: none; }

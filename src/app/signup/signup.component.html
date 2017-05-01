@@ -16,21 +16,29 @@
 
       <form class="register-form">
         <div class="row">
+            <label for="fname">First name</label>
+            <input type="text" name="fname" placeholder="Your first name" required>
+        </div>
+        <div class="row">
+            <label for="lastname">Last name</label>
+            <input type="text" name="lname" placeholder="Your last name" required>
+        </div>
+
+        <div class="row">
             <label for="email">Email</label>
-            <input type="text" name="email" placeholder="Your email">
+            <input type="text" name="email" placeholder="Your email" required>
         </div>
         <div class="row">
             <label for="password">Password</label>
-            <input type="password" placeholder="Your password">
+            <input type="password" placeholder="Your password" required>
         </div>
         <div class="row">
             <label for="confirmPassword">Confirm password</label>
-            <input type="confirmPassword" placeholder="Confirm password">
+            <input type="confirmPassword" placeholder="Confirm password" required>
         </div> 
-        
 
         <a href="" class="btn-full center-btn top">Sign up</a>
-        <p class="switch-to-login">Already have an account? <a href="#">Login here.</a></p>
+        <p class="switch-to-login">Already have an account? <a [routerLink]="['/login']">Login here.</a></p>
       </form>
 
     </div>
