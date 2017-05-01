@@ -30,7 +30,7 @@
 /* ================================================== */
 
 .job_filters{
-  margin: 60px auto;
+  margin: 60px 0 auto;
  }
 
 .search_jobs {
@@ -42,7 +42,7 @@
 
 input[type="text"] {
     padding: 6px;
-    border-radius: 5px;
+    border-radius: 3px;
     border: 0px;
     width: 100%;
     margin-left: 10px;
@@ -54,16 +54,23 @@ input[type="text"] {
 .submit_btn {
     display: inline-block;
     padding: 6px;
-    border-radius: 5px;
+    border-radius: 3px;
     border: 0px;
     width: 90%;
     margin-left: 10px;
     font-weight: 400;
     font-size: 100%;
-    background-color: #fff;
+    background-color: #0288D1;
     text-align: center;
     font-family: Lato;
     cursor: pointer;
+    color: #fff;
+    transition: background-color 0.2s;
+  }
+
+.submit_btn:active,
+.submit_btn:hover {
+  background-color: #B3E5FC;
 }
 
 .refinements {
@@ -95,3 +102,26 @@ input[type="text"] {
   margin: 10px 0 10px 10px;
   list-style: none;
 }
+
+
+/* ================================================== */
+ /* JOB LISTINGS */
+/* ================================================== */
+
+.job_overview{
+  border: 1px solid #BDBDBD;
+ float: left;
+ width: 1140px;
+ list-style: none;
+}
+
+img { height: 80px;
+  padding-left: 4px;   /* take away 4px on hover with ng style later */
+}
+
+.job_overview:hover,
+.job_overview:active { border-left: 4px solid #0288D1; }
+.job_listing_about,
+.job_listing_duration { margin-top: 20px; }
+.job_listing_location { margin-top: 40px; }
+.contract_type { margin-bottom: 15px };
