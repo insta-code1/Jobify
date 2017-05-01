@@ -89,6 +89,11 @@ p {
     height: 0;
   }
 
+  .sticky-directive {
+    position: fixed;
+    width: 100%;
+}
+
   .main-nav {
     float: right;
     list-style: none;

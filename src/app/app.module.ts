@@ -9,8 +9,11 @@ import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
 import { HomeComponent } from './home/home.component';
 import { ListingsComponent } from './listings/listings.component';
-import { SignupComponent } from './signup/signup.component';
+import { SignUpComponent } from './signup/signup.component';
 import { LoginComponent } from './login/login.component';
+
+import { WindowRef } from './_shared/window';
+import { StickyNavDirective } from './nav/nav.sticky.directive';
 
 @NgModule({
   declarations: [
@@ -18,8 +21,9 @@ import { LoginComponent } from './login/login.component';
     NavComponent,
     HomeComponent,
     ListingsComponent,
-    SignupComponent,
-    LoginComponent
+    SignUpComponent,
+    LoginComponent,
+    StickyNavDirective
   ],
   imports: [
     BrowserModule,
@@ -27,7 +31,7 @@ import { LoginComponent } from './login/login.component';
     HttpModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [WindowRef],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
