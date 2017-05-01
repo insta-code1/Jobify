@@ -3,6 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { HomeComponent } from './home/home.component';
 import { ListingsComponent } from './listings/listings.component';
+import { SignupComponent } from './signup/signup.component';
+
 // import { PageNotFoundComponent } from './';
 
 const appRoutes: Routes = [
@@ -11,6 +13,9 @@ const appRoutes: Routes = [
   },
   { 
     path: 'jobs/listings', component: ListingsComponent 
+  },
+  {
+    path: 'login/register', component: SignupComponent
   }
   // { path: '**', component: PageNotFoundComponent },
 ];

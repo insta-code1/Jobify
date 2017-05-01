@@ -109,16 +109,6 @@ blockquote:before {
   margin: 0 auto;
 }
 
-input[type=text],
-input[type=email],
-select,
-textarea {
-  width: 100%;
-  padding: 8px;
-  border-radius: 3px;
-  border: 1px solid #ccc;
-}
-
 
 
 

@@ -131,22 +131,34 @@ p {
  /* REUSABLE COMPONENTS*/
 /* ================================================== */
 
-.btn-signup-ghost {
+.btn-signup-ghost,
+.btn-full {
   padding: 3px 3px 1px 3px;
-  border: 2px solid #0288d1;
   border-radius: 2px;
   margin: 0px;
   font-weight: 400;
-  transition: background-color 0.2s, font-weight 0.2s;
+  transition: background-color 0.2s, font-weight 0.2s, border 0.2s;
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
 }
 
+.btn-signup-ghost {  border: 2px solid #0288d1; }
+
 .btn-signup-ghost:hover,
-.btn-signup-ghost:active {
+.btn-signup-ghost:active { background-color: #0288d1;}
+
+.btn-full { 
+  background-color: #03A9F4;
+  border: 2px solid #03A9F4;
+ } 
+
+.btn-full:hover,
+.btn-full:active { 
   background-color: #0288d1;
-}
+  border: 2px solid #0288D1;
+ }
+
 
 .center-btn {
     display: block;
@@ -161,4 +173,21 @@ p {
   font-size: 250%;
   color: #0288d1;
   font-weight: 700;
+}
+
+
+/* ================================================== */
+ /* FORM INPUT FEILDS*/
+/* ================================================== */
+
+select,
+textarea, 
+input[type=email],
+input[type=password],
+input[type=confirmPassword],
+input[type=text] {
+  width: 100%;
+  padding: 8px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
 }
