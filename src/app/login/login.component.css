@@ -40,6 +40,7 @@
   padding-bottom: 50px;
 }
 
+label { font-weight: 400; }
 input { margin: 6px 0; }
 
 .top {
