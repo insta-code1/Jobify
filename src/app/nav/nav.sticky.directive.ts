@@ -13,13 +13,12 @@ export class StickyNavDirective {
 
  @HostListener('window:scroll', ['$event'])
    handleScrollEvent(e) {
-    console.log(`e: ${e}`);
+    
       if (this.windowRef.nativeWindow.pageYOffset > 100) {
 
          this.el.nativeElement.classList.add('sticky-directive');
 
-      } 
-      else {
+      } else {
 
          this.el.nativeElement.classList.remove('sticky-directive')
       }
