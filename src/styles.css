@@ -196,3 +196,14 @@ input[type=text] {
   border-radius: 3px;
   border: 1px solid #ccc;
 }
+
+/* Highlight input feild when passed invalid property */
+input.ng-invalid.ng-touched {border: 1px #ff0000 solid; }
+
+.validate-form-mgs {
+  font-size: 80%;
+  color: #ff0000;
+  font-weight: 400;
+  padding: 3px 0;
+  text-align: center;
+}

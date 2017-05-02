@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 import { NgForm } from '@angular/forms';
 
 @Component({
@@ -7,12 +7,13 @@ import { NgForm } from '@angular/forms';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
+  @ViewChild('f') loginForm: NgForm;
 
   constructor() { }
 
   onSubmit(form: NgForm) {
 
-    console.log(form.value);
+    console.log(this.loginForm.value);
   
   }
 
