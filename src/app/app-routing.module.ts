@@ -5,6 +5,8 @@ import { HomeComponent } from './home/home.component';
 import { ListingsComponent } from './listings/listings.component';
 import { SignUpComponent } from './signup/signup.component';
 import { LoginComponent } from './login/login.component';
+import { SubmitResumeComponent } from './submit-resume/submit-resume.component';
+
 
 // import { PageNotFoundComponent } from './';
 
@@ -20,6 +22,9 @@ const appRoutes: Routes = [
   },
   {
     path: 'login', component: LoginComponent
+  }, 
+  {
+    path: 'submit-your-resume', component: SubmitResumeComponent
   }
   // { path: '**', component: PageNotFoundComponent },
 ];

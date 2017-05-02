@@ -207,3 +207,7 @@ input.ng-invalid.ng-touched {border: 1px #ff0000 solid; }
   padding: 3px 0;
   text-align: center;
 }
+
+/* LABEL ABOVE FORM INPUT */
+
+label { font-weight: 400; }

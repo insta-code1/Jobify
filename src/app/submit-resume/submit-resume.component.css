@@ -1,0 +1,50 @@
+section { padding-top: 0; }
+
+.hero-text-box {
+  background-image: -webkit-linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/assets/css/img/hero-submit-resume.png0');
+  background-image: -moz-linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/assets/css/img/hero-submit-resume.png');
+  background-image: -o-linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/assets/css/img/hero-submit-resume.png');
+  background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/assets/css/img/hero-submit-resume.png');
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 350px;
+}
+
+.hero-text-box h1 {
+  position: absolute;
+  width: 1140px;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-weight: 300;
+  margin: 0;
+}
+
+.call-to-action h2{ margin-top: 80px; }
+.call-to-action p { text-align: center; }
+
+/* ================================================== */
+ /* FORM SECTION*/
+/* ================================================== */
+
+.person-details { overflow: auto; }
+
+.form-control-select {background-color: #fff; }
+
+/*==== ADDRESS ====*/
+
+.address-details { overflow: auto; } 
+
+/*==== PHOTO INPUT ====*/
+ 
+.photo-input { 
+    overflow: auto;
+    margin-top: 6px; 
+}
+
+/*skills-list*/
+
+.skills-list { margin: 18px 0 0 0; }

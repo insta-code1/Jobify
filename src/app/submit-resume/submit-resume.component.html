@@ -1,0 +1,218 @@
+<section class="resume-section">
+
+<div class="hero-text-box">
+  <div class="row">
+    <h1 class="hero-text">SUBMIT RESUME</h1>
+  </div>
+</div>
+
+<div class="row call-to-action">
+  <h2>Submit Your Resume</h2>
+  <p>Step up in your carrer today!</p>
+</div>
+
+<div class="row">
+
+<form class="register-form" #f="ngForm">
+<!--===============================================================-->
+                            <!-- PERSON DETAILS -->
+<!--===============================================================-->
+
+
+<div class="person-details">
+  <div class="col span-1-of-5">
+      <label for="title">Title</label>
+      <select 
+      class="form-control-select"
+      type="text" 
+      name="title" 
+      placeholder="Title" 
+      required 
+      ngModel
+      #title="ngModel">
+        <option value="Mr">Mr</option>
+        <option value="Ms">Ms</option>
+        <option value="Mrs">Mrs</option>
+        <option value="Other">Other</option>                
+      </select>
+  <p class="validate-form-mgs" 
+  *ngIf="!title.valid && title.touched">Title required.</p>
+  </div>
+  
+  <div class="col span-2-of-5">
+      <label for="fname">First name</label>
+      <input 
+      type="text" 
+      name="fname" 
+      placeholder="Your first name" 
+      required 
+      ngModel
+      #fname="ngModel">
+  <p class="validate-form-mgs" 
+  *ngIf="!fname.valid && fname.touched">First name required.</p>
+  </div>
+  
+  <div class="col span-2-of-5">
+      <label for="lastname">Surname</label>
+      <input 
+      type="text" 
+      name="lname" 
+      placeholder="Your surname" 
+      required 
+      ngModel
+      #lname="ngModel">
+    <p class="validate-form-mgs" 
+    *ngIf="!lname.valid && lname.touched">Surname required.</p>
+  </div>
+</div>
+    
+<!--===============================================================-->
+                            <!-- Address -->
+<!--===============================================================-->
+
+<div class="address-details">
+  <div class="col span-1-of-5">
+      <label for="country">Country</label>
+      <select 
+      class="form-control-select"
+      type="text" 
+      name="country" 
+      required 
+      ngModel
+      #country="ngModel">
+        <option value="Mr">Ireland</option>
+        <option value="Ms">Norway</option>
+        <option value="Mrs">USA</option>
+        <option value="Other">Other</option>                
+      </select>
+      <p class="validate-form-mgs" 
+      *ngIf="!country.valid && country.touched">Country required.</p>
+  </div>
+
+  <div class="col span-4-of-5">
+        <label for="region">Region</label>
+        <input 
+        type="text" 
+        name="region" 
+        placeholder="e.g. London, Paris, New York..." 
+        required 
+        ngModel
+        #region="ngModel">
+        <p class="validate-form-mgs" 
+        *ngIf="!region.valid && region.touched">Region required.</p>
+    </div>
+</div>
+
+  <!--===============================================================-->
+                              <!-- Photo Input -->
+  <!--===============================================================-->
+
+<div class="photo-input">
+  <label for="photo">PHOTO (OPTIONAL)</label>
+</div>
+<div>
+  <input 
+    type="file" 
+    name="photo"  
+    ngModel>
+</div>
+
+<!--===============================================================-->
+                    <!-- SKILLS -->
+<!--===============================================================-->
+
+<div class="skills-list">
+  <label for="skills">SKILLS</label>
+  <input 
+    type="text" 
+    name="skill" 
+    placeholder="Comma separate a list of relevant skills"
+    required 
+    ngModel
+    #skill="ngModel">
+  <p class="validate-form-mgs" 
+  *ngIf="!skill.valid && skill.touched">Please add relevant skills for resume</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+
+
+        <div class="row">
+            <label for="email">Email</label>
+            <input 
+            type="text" 
+            name="email" 
+            placeholder="Your email" 
+            required 
+            ngModel
+            #email="ngModel" 
+            email>
+        </div>
+        <p class="validate-form-mgs" 
+        *ngIf="!email.valid && email.touched">Email required.</p>
+  
+        <div class="row">
+            <label for="password">Password</label>
+            <input 
+            type="password" 
+            name="password" 
+            placeholder="Your password" 
+            required 
+            ngModel
+            #password="ngModel">
+        </div>
+        <p class="validate-form-mgs" 
+        *ngIf="!password.valid && password.touched">Password name required.</p>
+  
+        <div class="row">
+            <label for="confirmPassword">Confirm password</label>
+            <input 
+            type="password" 
+            name="confirmPassword"
+            placeholder="Confirm password"
+            required
+            ngModel
+            #confirmPassword="ngModel">
+        </div>
+        <p class="validate-form-mgs" 
+        *ngIf="!confirmPassword.valid && confirmPassword.touched">Confirmation password required.</p> 
+        -->
+      </form>
+    <div class="row">
+      <button class="btn-full center-btn top" [disabled]="!f.valid" (click)="onSubmit()">SUBMIT RESUME</button>
+    </div>
+
+  </div> <!--closing form wrapper  -->
+
+
+
+
+
+
+
+
+</section>
