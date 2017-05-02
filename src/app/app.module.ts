@@ -14,6 +14,7 @@ import { LoginComponent } from './login/login.component';
 
 import { WindowRef } from './_shared/window';
 import { StickyNavDirective } from './nav/nav.sticky.directive';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { StickyNavDirective } from './nav/nav.sticky.directive';
     ListingsComponent,
     SignUpComponent,
     LoginComponent,
-    StickyNavDirective
+    StickyNavDirective,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

@@ -16,9 +16,7 @@
  /* LOGIN FORM */
 /* ================================================== */
 
-.login-section {
-  height: 0;
-}
+.login-section { height: 400px; }
 .call-to-action {
     position: relative;
     bottom: 15px;

@@ -16,9 +16,7 @@
  /*REGISTER FORM */
 /* ================================================== */
 
-.register-section {
-  height: 0;
-}
+.register-section { height: 600px; }
 .call-to-action {
     position: relative;
     bottom: 15px;
