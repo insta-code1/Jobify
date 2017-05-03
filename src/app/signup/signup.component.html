@@ -1,0 +1,91 @@
+<div class="hero-signup-box">
+  <div class="title-box row">
+    <h1>Register Account</h1>
+  </div>
+</div>
+
+
+<section class="register-section">
+  <div class="signup-box row">
+
+    <div class="row">
+      <h2>SIGN UP</h2>
+      <p class="call-to-action">There's lots more you can do logged in. Find out now.</p>
+    </div>
+    <div class="row">
+
+      <form class="register-form" #f="ngForm">
+        <div class="row">
+            <label for="fname">First name</label>
+            <input 
+            type="text" 
+            name="fname" 
+            placeholder="Your first name" 
+            required 
+            ngModel
+            #fname="ngModel">
+        </div>
+        <p class="validate-form-mgs" 
+        *ngIf="!fname.valid && fname.touched">First name required.</p>
+        
+        <div class="row">
+            <label for="lastname">Last name</label>
+            <input 
+            type="text" 
+            name="lname" 
+            placeholder="Your last name" 
+            required 
+            ngModel
+            #lname="ngModel">
+        </div>
+        <p class="validate-form-mgs" 
+        *ngIf="!lname.valid && lname.touched">Last name required.</p>
+
+        <div class="row">
+            <label for="email">Email</label>
+            <input 
+            type="text" 
+            name="email" 
+            placeholder="Your email" 
+            required 
+            ngModel
+            #email="ngModel" 
+            email>
+        </div>
+        <p class="validate-form-mgs" 
+        *ngIf="!email.valid && email.touched">Email required.</p>
+  
+        <div class="row">
+            <label for="password">Password</label>
+            <input 
+            type="password" 
+            name="password" 
+            placeholder="Your password" 
+            required 
+            ngModel
+            #password="ngModel">
+        </div>
+        <p class="validate-form-mgs" 
+        *ngIf="!password.valid && password.touched">Password name required.</p>
+  
+        <div class="row">
+            <label for="confirmPassword">Confirm password</label>
+            <input 
+            type="password" 
+            name="confirmPassword"
+            placeholder="Confirm password"
+            required
+            ngModel
+            #confirmPassword="ngModel">
+        </div>
+        <p class="validate-form-mgs" 
+        *ngIf="!confirmPassword.valid && confirmPassword.touched">Confirmation password required.</p> 
+        
+        <button class="btn-full center-btn top" [disabled]="!f.valid" (click)="onSubmit()">Sign up</button>
+        <p class="switch-to-login">Already have an account? <a [routerLink]="['/login']">Login here.</a></p>
+      </form>
+
+    </div>
+
+  </div>
+</section>

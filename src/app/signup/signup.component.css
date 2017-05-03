@@ -1,0 +1,54 @@
+.hero-signup-box {
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/assets/css/img/hero-programmers.jpg');
+  height: 500px;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position-y: -220px;
+}
+
+.title-box h1 {
+  position: absolute;
+  top: 35%;
+}
+
+/* ================================================== */
+ /*REGISTER FORM */
+/* ================================================== */
+
+.register-section { height: 600px; }
+.call-to-action {
+    position: relative;
+    bottom: 15px;
+    text-align: center;
+}
+
+.signup-box { 
+  background-color: #f4f4f4;
+  overflow: hidden;
+  padding-top: 30px;
+  position: relative;
+  bottom: 200px;
+  }
+
+.register-form {
+  width: 35%;
+  margin: 0 auto;
+  background-color: #f4f4f4; 
+  padding-bottom: 50px;
+}
+
+label { font-weight: 400; }
+input { margin: 6px 0; }
+
+.top {
+  position: relative;
+  bottom: 45px;
+}
+
+.switch-to-login {
+  font-size: 90%;
+  text-align: center;
+}
+
+.switch-to-login a { text-decoration: none; }

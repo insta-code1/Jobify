@@ -1,0 +1,195 @@
+/* ================================================== */
+ /* HERO IMAGE*/
+/* ================================================== */
+.hero-text-box {
+  background-image: -webkit-linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/assets/css/img/hero-image.jpg');
+  background-image: -moz-linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/assets/css/img/hero-image.jpg');
+  background-image: -o-linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/assets/css/img/hero-image.jpg');
+  background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/assets/css/img/hero-image.jpg');
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+.hero-text-box h1 {
+  position: absolute;
+  width: 1140px;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-weight: 300;
+  margin: 0;
+}
+
+.hero-btn-pos {
+  position: absolute;
+  top: 40%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 130px;
+  height: 20px;
+}
+
+/* ================================================== */
+ /* FEATURE SECTION*/
+/* ================================================== */
+
+.long-copy {
+  line-height: 145%;
+  width: 70%;
+  margin-left: 15%;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.row.col.span-1-of-4.box {
+    margin-right: 10px;
+}
+
+box p {
+  font-size: 90%;
+  line-height: 140%;
+}
+
+
+/* ================================================== */
+ /* TOP TALENT SECTION*/
+/* ================================================== */
+
+.top-talent-section {
+  background-image: -webkit-linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/assets/css/img/developer.jpg');
+  background-image: -moz-linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/assets/css/img/developer.jpg');
+  background-image: -o-linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/assets/css/img/developer.jpg');
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/assets/css/img/developer.jpg');
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center; 
+  background-attachment: fixed;
+  height: 700px;
+}
+
+.top-talent-section h2,
+.top-talent-section p {
+  color: white;
+}
+
+.top-talent-section h2 {
+  margin-top: 60px;
+}
+blockquote {
+  color: #fff;
+  position: relative;
+  padding-top: 30px;
+}
+
+blockquote:before {
+  content: "\201C";
+  color: #fff;
+  font-size: 500%;
+  position: absolute;
+  top: -30px;
+  left: -10px;
+}
+
+/* ================================================== */
+ /* CONTACT US SECTION*/
+/* ================================================== */
+
+.contact-us-section p {
+  text-align: center;
+}
+
+.contact-form {
+  width: 60%;
+  margin: 0 auto;
+}
+
+
+
+
+/* ================================================== */
+ /* MEDIA QUERIES*/
+/* ================================================== */
+
+@media only screen and (max-width: 1200px) {
+
+  .hero-text-box{
+    background-image: -webkit-linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/assets/css/img/hero-image.jpg');
+    width: 100%;
+    padding: 0 2%;
+  }
+
+  .hero-text-box h1 { 
+    width: 100%;
+    margin-left: 20px;  
+  }
+}
+
+
+ /*Small tablet to big tablet 768px to 1023px */
+@media only screen and (max-width: 1023px) {
+
+
+  /* FIND THE DREAM JOB section */
+  
+  .long-copy {
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  .span-1-of-4 {
+    width: 100%;
+  }
+  /*icons margin*/
+  .row.col.span-1-of-4.box { margin: 20px 20px; }
+
+  /*Talent section*/
+  .top-talent-section { 
+    height: 550px;
+    margin-top: 0;  
+  }
+
+  .span-1-of-2 {
+    width: 80%;
+  }
+
+  blockquote:before { top: 0px; }
+  .contact-form { width: 100%; }
+} 
+
+
+
+/* Small phones to small tablets 481px ot 767px */
+@media only screen and (max-width: 767px) {
+
+/* Section Features */
+ .row.col.span-1-of-4.box {     
+    width: 90%;
+    margin: 0 5%;   
+  }
+
+  /*contact-form*/
+  .col.span-1-of-3 { margin: 20px 0; } 
+  .contact-form a.btn-signup-ghost.center-btn { margin-top: 145px; }
+}
+
+
+/* Small phones from 0 to 480px */
+@media only screen and (max-width: 480px) {
+  /*Finde Dream job section */
+  .row.col.span-1-of-4.box {     
+    width: 90%;
+    margin: 0 5%;   
+  }
+
+  /*Talent section*/
+  .top-talent-section { height: 100vh; }
+  .top-talent-section h2 { margin-top: 30px; }
+  .span-1-of-2 { width: 100%; }
+  blockquote { margin-left: 10px; }
+  }

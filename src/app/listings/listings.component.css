@@ -1,0 +1,127 @@
+
+/*
+.dark-primary-color    { background: #0288D1; }
+.default-primary-color { background: #03A9F4; }
+.light-primary-color   { background: #B3E5FC; }
+.text-primary-color    { color: #FFFFFF; }
+.accent-color          { background: #448AFF; }
+.primary-text-color    { color: #212121; }
+.secondary-text-color  { color: #757575; }
+.divider-color         { border-color: #BDBDBD; }
+ */
+
+/* ================================================== */
+ /* MOCK UP */
+/* ================================================== */
+
+.block-color {
+  height: 100px;
+  background-color: #222b38;
+}
+
+.google-maps {
+  background-image: url('/assets/css/img/google-map-container-image.png');
+  height: 400px;
+  background-size: cover;
+}
+
+/* ================================================== */
+ /* JOB FILTERS */
+/* ================================================== */
+
+.job_filters{
+  margin: 60px 0 auto;
+ }
+
+.search_jobs {
+  border-top: 3px solid #B3E5FC;
+  background-color: #03A9F4;
+  overflow: hidden;
+  padding: 10px 0;
+}
+
+input[type="text"] {
+    padding: 6px;
+    border-radius: 3px;
+    border: 0px;
+    width: 100%;
+    margin-left: 10px;
+    font-weight: 400;
+    font-size: 100%;
+    font-family: Lato;
+}
+
+.submit_btn {
+    display: inline-block;
+    padding: 6px;
+    border-radius: 3px;
+    border: 0px;
+    width: 90%;
+    margin-left: 10px;
+    font-weight: 400;
+    font-size: 100%;
+    background-color: #0288D1;
+    text-align: center;
+    font-family: Lato;
+    cursor: pointer;
+    color: #fff;
+    transition: background-color 0.2s;
+  }
+
+.submit_btn:active,
+.submit_btn:hover {
+  background-color: #B3E5FC;
+}
+
+.refinements {
+  margin: 30px auto;
+  border: 1px solid #BDBDBD;
+  border-radius: 5px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.sort-by {
+  float: left;
+  margin-top: 6px;
+}
+
+.sort-by h3,
+.sort-by p {
+  float: left;
+  margin: 10px 0 10px 10px;
+}
+
+.checkbox {
+  float: right;
+  margin: 0;
+}
+
+.checkbox li {
+  float: left;
+  margin: 10px 0 10px 10px;
+  list-style: none;
+}
+
+
+/* ================================================== */
+ /* JOB LISTINGS */
+/* ================================================== */
+
+.job_overview{
+  border: 1px solid #BDBDBD;
+ float: left;
+ width: 1140px;
+ list-style: none;
+}
+
+img { height: 80px;
+  padding-left: 4px;   /* take away 4px on hover with ng style later */
+}
+
+.job_overview:hover,
+.job_overview:active { border-left: 4px solid #0288D1; }
+.job_listing_about,
+.job_listing_duration { margin-top: 20px; }
+.job_listing_location { margin-top: 40px; }
+.contract_type { margin-bottom: 15px };

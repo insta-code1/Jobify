@@ -1,0 +1,51 @@
+<div class="hero-signup-box">
+  <div class="title-box row">
+    <h1>LOGIN</h1>
+  </div>
+</div>
+
+
+<section class="login-section">
+  <div class="signup-box row">
+
+    <div class="row">
+      <h2>LOGIN</h2>
+      <p class="call-to-action">There's lots more you can do logged in. Find out now.</p>
+    </div>
+    <div class="row">
+
+      <form class="login-form" (ngSubmit)="onSubmit()" #f="ngForm">
+        
+        <div class="row">
+            <label for="email">Email</label>
+            <input 
+            type="text" 
+            name="email" 
+            placeholder="Your email" 
+            ngModel 
+            required 
+            email
+            #email="ngModel">
+            <p class="validate-form-mgs" *ngIf="!email.valid && email.touched">Please enter a vaild email.</p>
+        </div>
+        <div class="row">
+            <label for="password">Password</label>
+            <input 
+            type="password" 
+            name="password" 
+            placeholder="Your password" 
+            ngModel 
+            required
+            #password="ngModel">
+        </div>
+        <p class="validate-form-mgs" *ngIf="!password.valid && password.touched">Password required.</p>
+        <p class="forgot-password"><a href="#">I forgot my password</a></p>
+        
+        <button class="btn-full center-btn top" [disabled]="!f.valid" (click)="onSubmit()">LOGIN</button>
+        <p class="switch-to-sign-up">Don't have an account? <a [routerLink]="['/register']">Register here.</a></p>
+      </form>
+
+    </div>
+
+  </div>
+</section>
