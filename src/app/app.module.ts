@@ -16,6 +16,12 @@ import { StickyNavDirective } from './nav/nav.sticky.directive';
 import { AppRoutingModule } from './app-routing.module';
 import { SubmitResumeComponent } from './submit-resume/submit-resume.component';
 
+// services 
+import { SubmitResumeService } from './submit-resume/submit-resume.service';
+
+
+import { CKEditorModule } from 'ng2-ckeditor'; // add to submit Resume module
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,16 +32,19 @@ import { SubmitResumeComponent } from './submit-resume/submit-resume.component';
     LoginComponent,
     StickyNavDirective,
     FooterComponent,
-    
-    SubmitResumeComponent,
+    SubmitResumeComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    AppRoutingModule
+    AppRoutingModule,
+    CKEditorModule
   ],
-  providers: [WindowRef],
+  providers: [
+    WindowRef,
+    SubmitResumeService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

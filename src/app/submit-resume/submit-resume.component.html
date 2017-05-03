@@ -1,3 +1,7 @@
+<!--===============================================================-->
+                      <!-- HERO IMAGE/TEXT -->
+<!--===============================================================-->
+
 <section class="resume-section">
 
 <div class="hero-text-box">
@@ -14,8 +18,9 @@
 <div class="row">
 
 <form class="register-form" #f="ngForm">
+
 <!--===============================================================-->
-                            <!-- PERSON DETAILS -->
+                      <!-- PERSON DETAILS -->
 <!--===============================================================-->
 
 
@@ -67,7 +72,7 @@
 </div>
     
 <!--===============================================================-->
-                            <!-- Address -->
+                          <!-- Address -->
 <!--===============================================================-->
 
 <div class="address-details">
@@ -80,9 +85,9 @@
       required 
       ngModel
       #country="ngModel">
-        <option value="Mr">Ireland</option>
-        <option value="Ms">Norway</option>
-        <option value="Mrs">USA</option>
+        <option value="Ireland">Ireland</option>
+        <option value="Norway">Norway</option>
+        <option value="USA">USA</option>
         <option value="Other">Other</option>                
       </select>
       <p class="validate-form-mgs" 
@@ -103,22 +108,27 @@
     </div>
 </div>
 
-  <!--===============================================================-->
-                              <!-- Photo Input -->
-  <!--===============================================================-->
+<!--===============================================================-->
+                          <!-- Photo Input -->
+<!--===============================================================-->
 
-<div class="photo-input">
+<div class="file-input">
   <label for="photo">PHOTO (OPTIONAL)</label>
 </div>
 <div>
   <input 
+    accept="image/jpeg,image/png"
     type="file" 
     name="photo"  
-    ngModel>
+    (change)="uploadImage($event)">
+  <span  *ngIf="exceededImageSize" class="validate-form-mgs image-upload-err">Please upload an image file under 500kb.</span>
+  <span *ngIf="unacceptedImageType" class="validate-form-mgs image-upload-err">
+    Please upload your image as either: ".jpg", "jpeg", ".png".
+  </span>
 </div>
 
 <!--===============================================================-->
-                    <!-- SKILLS -->
+                            <!-- SKILLS -->
 <!--===============================================================-->
 
 <div class="skills-list">
@@ -135,84 +145,54 @@
 </div>
 
 
+<!--===============================================================-->
+                        <!-- RESUME CONTENT -->
+<!--===============================================================-->
+</form>
 
+<div class="resume-content">
+  <label for="coverLetter">COVER LETTER</label>
 
+  <ckeditor
+    name="coverLetter"
+    [(ngModel)]="coverLetter.coverLetter"
+    [config]="{uiColor: '#99000'}"
+    debounce="500">
+  </ckeditor>
 
+</div>
 
+<!--===============================================================-->
+                          <!-- RESUME UPLOAD INPUT -->
+<!--===============================================================-->
 
+<div class="resume-input">
+  <label for="resume-input">RESUME FILE</label>
+</div>
+<div>
+  <input 
+    type="file" 
+    name="resume-input" 
+    (change)="uploadResume($event)">
+  <span *ngIf="exceededFileSize" class="validate-form-mgs image-upload-err">
+    Please upload an file under 500kb.
+  </span>
+  <span *ngIf="unacceptedFileType" class="validate-form-mgs image-upload-err">
+    Please save your file with one of the following extension types: ".doc", "pdf", "txt"
+  </span>
+</div>
+<div class="">
+  {{base64StringResume}}
+</div>
 
+<!--===============================================================-->
+                          <!-- END OF FORM -->
+<!--===============================================================-->
 
+<div class="row">
+  <button class="btn-full center-btn top" [disabled]="!f.valid" (click)="onSubmit()">SUBMIT RESUME</button>
+</div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!--
-
-
-        <div class="row">
-            <label for="email">Email</label>
-            <input 
-            type="text" 
-            name="email" 
-            placeholder="Your email" 
-            required 
-            ngModel
-            #email="ngModel" 
-            email>
-        </div>
-        <p class="validate-form-mgs" 
-        *ngIf="!email.valid && email.touched">Email required.</p>
-  
-        <div class="row">
-            <label for="password">Password</label>
-            <input 
-            type="password" 
-            name="password" 
-            placeholder="Your password" 
-            required 
-            ngModel
-            #password="ngModel">
-        </div>
-        <p class="validate-form-mgs" 
-        *ngIf="!password.valid && password.touched">Password name required.</p>
-  
-        <div class="row">
-            <label for="confirmPassword">Confirm password</label>
-            <input 
-            type="password" 
-            name="confirmPassword"
-            placeholder="Confirm password"
-            required
-            ngModel
-            #confirmPassword="ngModel">
-        </div>
-        <p class="validate-form-mgs" 
-        *ngIf="!confirmPassword.valid && confirmPassword.touched">Confirmation password required.</p> 
-        -->
-      </form>
-    <div class="row">
-      <button class="btn-full center-btn top" [disabled]="!f.valid" (click)="onSubmit()">SUBMIT RESUME</button>
-    </div>
-
-  </div> <!--closing form wrapper  -->
-
-
-
-
-
-
-
+</div> <!--closing form wrapper  -->
 
 </section>

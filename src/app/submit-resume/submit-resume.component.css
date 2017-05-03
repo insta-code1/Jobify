@@ -40,11 +40,12 @@ section { padding-top: 0; }
 
 /*==== PHOTO INPUT ====*/
  
-.photo-input { 
+.file-input { 
     overflow: auto;
     margin-top: 6px; 
 }
 
 /*skills-list*/
-
-.skills-list { margin: 18px 0 0 0; }
+.skills-list,
+.resume-content,
+.resume-input { margin: 18px 0 0 0; }
